@@ -2,70 +2,145 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Merkacol - Tienda Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merkacol - Supermercado en línea</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Merkacol</h1>
-    <nav>
-      <ul>
-        <li><a href="#frutas">Frutas</a></li>
-        <li><a href="#verduras">Verduras</a></li>
-        <li><a href="#carnes">Carnes</a></li>
-        <li><a href="#despensa">Despensa</a></li>
-        <li><a href="#charcuteria">Charcutería</a></li>
-      </ul>
-    </nav>
-    <div id="cart-icon">🛒<span id="cart-count">0</span></div>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo"><img src="images/logomerkacol.JPG" alt="Logo de Merkacol" height="50"></a>
+      <nav class="nav">
+        <a href="#inicio" class="nav__link">Inicio</a>
+        <div class="nav__dropdown">
+          <button class="nav__link">Frutas</button>
+          <div class="nav__menu">
+            <a href="#frutas-acidas" class="nav__menu-link">Ácidas</a>
+            <a href="#frutas-semiacidas" class="nav__menu-link">Semiácidas</a>
+            <a href="#frutas-neutras" class="nav__menu-link">Neutras</a>
+            <a href="#frutas-dulces" class="nav__menu-link">Dulces</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__link">Verduras</button>
+          <div class="nav__menu">
+            <a href="#verduras-raices" class="nav__menu-link">Raíces</a>
+            <a href="#verduras-hojas" class="nav__menu-link">Hojas</a>
+            <a href="#verduras-tallos" class="nav__menu-link">Tallos</a>
+            <a href="#verduras-bulbos" class="nav__menu-link">Bulbos</a>
+            <a href="#verduras-flores" class="nav__menu-link">Flores</a>
+            <a href="#verduras-frutos" class="nav__menu-link">Frutos</a>
+            <a href="#verduras-semillas" class="nav__menu-link">Semillas</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__link">Carnes</button>
+          <div class="nav__menu">
+            <a href="#carnes-pollo" class="nav__menu-link">Pollo</a>
+            <a href="#carnes-cerdo" class="nav__menu-link">Cerdo</a>
+            <a href="#carnes-res" class="nav__menu-link">Res</a>
+            <a href="#carnes-pescados" class="nav__menu-link">Pescados</a>
+            <a href="#carnes-mariscos" class="nav__menu-link">Mariscos</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__link">Despensa</button>
+          <div class="nav__menu">
+            <a href="#despensa-arroz-granos" class="nav__menu-link">Arroz y granos</a>
+            <a href="#despensa-cafe" class="nav__menu-link">Café</a>
+            <a href="#despensa-chocolate" class="nav__menu-link">Chocolate</a>
+            <a href="#despensa-pastas-enlatados" class="nav__menu-link">Pastas y enlatados</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__link">Charcutería</button>
+          <div class="nav__menu">
+            <a href="#charcuteria-quesos" class="nav__menu-link">Quesos</a>
+            <a href="#charcuteria-frutos-secos" class="nav__menu-link">Frutos secos</a>
+            <a href="#charcuteria-carnes-maduradas" class="nav__menu-link">Carnes maduradas</a>
+            <a href="#charcuteria-encurtidos" class="nav__menu-link">Encurtidos</a>
+          </div>
+        </div>
+      </nav>
+      <button id="openCart" class="cart-button" aria-label="Abrir carrito">
+        🛒 <span id="cartCount" class="cart-count">0</span>
+      </button>
+    </div>
   </header>
 
-  <main id="main-content">
-    <section id="frutas" class="category">
-      <h2>Frutas</h2>
-      <div id="frutas-container" class="subcategory-container"></div>
+  <main>
+    <!-- Inicio -->
+    <section id="inicio" class="hero">
+      <div class="container hero__inner">
+        <h1>Merkacol</h1>
+        <p>Tu supermercado en línea con productos frescos, precios claros y entregas rápidas.</p>
+        <div class="hero__actions">
+          <a href="#frutas-acidas" class="btn btn--primary">Explorar frutas</a>
+          <a href="#carnes-res" class="btn btn--ghost">Ver carnes</a>
+        </div>
+      </div>
     </section>
 
-    <section id="verduras" class="category">
-      <h2>Verduras</h2>
-      <div id="verduras-container" class="subcategory-container"></div>
+    <!-- Filtros globales -->
+    <section class="container filters">
+      <div class="filters__group">
+        <label for="search">Buscar:</label>
+        <input type="search" id="search" placeholder="Buscar productos..." />
+      </div>
+      <div class="filters__group">
+        <label for="sort">Ordenar:</label>
+        <select id="sort">
+          <option value="relevance">Relevancia</option>
+          <option value="price-asc">Precio: menor a mayor</option>
+          <option value="price-desc">Precio: mayor a menor</option>
+          <option value="name-asc">Nombre: A–Z</option>
+          <option value="name-desc">Nombre: Z–A</option>
+        </select>
+      </div>
     </section>
 
-    <section id="carnes" class="category">
-      <h2>Carnes</h2>
-      <div id="carnes-container" class="subcategory-container"></div>
-    </section>
-
-    <section id="despensa" class="category">
-      <h2>Despensa</h2>
-      <div id="despensa-container" class="subcategory-container"></div>
-    </section>
-
-    <section id="charcuteria" class="category">
-      <h2>Charcutería</h2>
-      <div id="charcuteria-container" class="subcategory-container"></div>
+    <!-- Contenedor dinámico de categorías y productos -->
+    <section class="container">
+      <div id="catalog"></div>
     </section>
   </main>
 
-  <aside id="cart">
-    <h2>Carrito de Compras</h2>
-    <div id="cart-items"></div>
-    <div class="cart-footer">
-      <label for="unit-select">Mostrar en:</label>
-      <select id="unit-select">
-        <option value="kg">Kilogramos</option>
-        <option value="lb">Libras</option>
-      </select>
-      <h3>Total: <span id="cart-total">0</span></h3>
-      <button id="clear-cart">Vaciar carrito</button>
+  <!-- Carrito -->
+  <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+    <div class="cart-panel__header">
+      <h2>Carrito de compra</h2>
+      <button id="closeCart" class="icon-button" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div id="cartItems" class="cart-panel__items"></div>
+    <div class="cart-panel__summary">
+      <div class="summary__row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">$0</strong>
+      </div>
+      <div class="summary__row">
+        <span>Envío</span>
+        <strong id="cartShipping">$0</strong>
+      </div>
+      <div class="summary__row summary__total">
+        <span>Total</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+      <div class="cart-panel__actions">
+        <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+        <button id="checkout" class="btn btn--primary">Proceder al pago</button>
+      </div>
     </div>
   </aside>
 
-  <footer>
-    <p>© 2025 Merkacol - Supermercado en línea</p>
+  <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+      <p>Entrega en Bogotá y alrededores.</p>
+    </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
