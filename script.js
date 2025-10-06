@@ -9,7 +9,7 @@ const formatCOP = (value) =>
         { id: "fr-ac-1", name: "Limón Tahití", img: "images/limontahiti.jpg", desc: "Limón fresco ideal para jugos y adobos.", unit: "por libra", price: 3200 },
         { id: "fr-ac-2", name: "Maracuyá", img: "images/maracuya.jpg", desc: "Pulpa aromática y tropical, perfecta para postres.", unit: "por libra", price: 5800 },
         { id: "fr-ac-3", name: "Piña Oro", img: "images/pinagolden.jpg", desc: "Piña dulce y jugosa, seleccionada.", unit: "por unidad", price: 7200 },
-        { id: "fr-ac-4", name: "Mora de castilla", img: "images/moracastilla.JPG", desc: "Rica en antioxidantes, ideal para batidos.", unit: "por libra", price: 6900 }
+        { id: "fr-ac-4", name: "Mora de castilla", img: "images/moracastilla.jpg", desc: "Rica en antioxidantes, ideal para batidos.", unit: "por libra", price: 6900 }
       ],
       "Semiácidas": [
         { id: "fr-sa-1", name: "Manzana Roja", img: "images/manzanaroja.jpg", desc: "Crujiente y equilibrada, perfecta para snacks.", unit: "por libra", price: 7900 },
@@ -500,3 +500,4 @@ const formatCOP = (value) =>
   });
 
   
+
