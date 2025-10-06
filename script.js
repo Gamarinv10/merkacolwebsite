@@ -14,41 +14,41 @@ const formatCOP = (value) =>
       "Semiácidas": [
         { id: "fr-sa-1", name: "Manzana Roja", img: "images/manzanaroja.jpg", desc: "Crujiente y equilibrada, perfecta para snacks.", unit: "por libra", price: 7900 },
         { id: "fr-sa-2", name: "Uva Isabella", img: "images/uvaisabella.jpg", desc: "Aromática y dulce, para mesa y jugos.", unit: "por libra", price: 8800 },
-        { id: "fr-sa-3", name: "Ciruela", img: "https://via.placeholder.com/600x450?text=Ciruela", desc: "Textura suave y sabor intenso.", unit: "por libra", price: 9900 },
-        { id: "fr-sa-4", name: "Guayaba", img: "https://via.placeholder.com/600x450?text=Guayaba", desc: "Fragante y rica en vitamina C.", unit: "por libra", price: 5200 }
+        { id: "fr-sa-3", name: "Ciruela", img: "images/ciruelas.jpg", desc: "Textura suave y sabor intenso.", unit: "por libra", price: 9900 },
+        { id: "fr-sa-4", name: "Guayaba", img: "images/guayabas.jpg", desc: "Fragante y rica en vitamina C.", unit: "por libra", price: 5200 }
       ],
       "Neutras": [
-        { id: "fr-ne-1", name: "Aguacate Hass", img: "https://via.placeholder.com/600x450?text=Aguacate", desc: "Cremoso, ideal para ensaladas y tostadas.", unit: "por unidad", price: 4800 },
-        { id: "fr-ne-2", name: "Coco", img: "https://via.placeholder.com/600x450?text=Coco", desc: "Pulpa y agua refrescante.", unit: "por unidad", price: 8500 },
-        { id: "fr-ne-3", name: "Banano Verde", img: "https://via.placeholder.com/600x450?text=Banano+Verde", desc: "Para patacones y preparaciones saladas.", unit: "por libra", price: 2600 },
-        { id: "fr-ne-4", name: "Tamarindo", img: "https://via.placeholder.com/600x450?text=Tamarindo", desc: "Sabor neutro y versátil.", unit: "por libra", price: 7400 }
+        { id: "fr-ne-1", name: "Aguacate Hass", img: "images/aguacates.jpg", desc: "Cremoso, ideal para ensaladas y tostadas.", unit: "por unidad", price: 4800 },
+        { id: "fr-ne-2", name: "Coco", img: "images/cocos.jpg", desc: "Pulpa y agua refrescante.", unit: "por unidad", price: 8500 },
+        { id: "fr-ne-3", name: "Banano Verde", img: "images/platanos.jpg", desc: "Para patacones y preparaciones saladas.", unit: "por libra", price: 2600 },
+        { id: "fr-ne-4", name: "Tamarindo", img: "images/tamarindos.jpg", desc: "Sabor neutro y versátil.", unit: "por libra", price: 7400 }
       ],
       "Dulces": [
-        { id: "fr-du-1", name: "Banano", img: "https://via.placeholder.com/600x450?text=Banano", desc: "Dulce y energético, fuente de potasio.", unit: "por libra", price: 2500 },
-        { id: "fr-du-2", name: "Mango Tommy", img: "https://via.placeholder.com/600x450?text=Mango", desc: "Maduración uniforme y pulpa carnosa.", unit: "por unidad", price: 4200 },
-        { id: "fr-du-3", name: "Papaya", img: "https://via.placeholder.com/600x450?text=Papaya", desc: "Ideal para el desayuno.", unit: "por unidad", price: 7800 },
-        { id: "fr-du-4", name: "Melón Cantalupo", img: "https://via.placeholder.com/600x450?text=Mel%C3%B3n", desc: "Aroma fresco y sabor dulce.", unit: "por unidad", price: 9900 }
+        { id: "fr-du-1", name: "Banano", img: "images/banano.jpg", desc: "Dulce y energético, fuente de potasio.", unit: "por libra", price: 2500 },
+        { id: "fr-du-2", name: "Mango Tommy", img: "images/mangos.jpg", desc: "Maduración uniforme y pulpa carnosa.", unit: "por unidad", price: 4200 },
+        { id: "fr-du-3", name: "Papaya", img: "images/papayas.jpg", desc: "Ideal para el desayuno.", unit: "por unidad", price: 7800 },
+        { id: "fr-du-4", name: "Melón Cantalupo", img: "images/melones.jpg", desc: "Aroma fresco y sabor dulce.", unit: "por unidad", price: 9900 }
       ]
     },
   
     "Verduras": {
       "Raíces": [
-        { id: "ve-ra-1", name: "Zanahoria", img: "https://via.placeholder.com/600x450?text=Zanahoria", desc: "Fresca y crujiente para ensaladas.", unit: "por libra", price: 2400 },
-        { id: "ve-ra-2", name: "Papa Criolla", img: "https://via.placeholder.com/600x450?text=Papa+Criolla", desc: "Dorada y cremosa, ideal para sopas.", unit: "por libra", price: 3800 },
-        { id: "ve-ra-3", name: "Yuca", img: "https://via.placeholder.com/600x450?text=Yuca", desc: "Base perfecta para frituras.", unit: "por libra", price: 3200 },
-        { id: "ve-ra-4", name: "Rábano", img: "https://via.placeholder.com/600x450?text=R%C3%A1bano", desc: "Picante suave y refrescante.", unit: "por libra", price: 2900 }
+        { id: "ve-ra-1", name: "Zanahoria", img: "images/zanahorias.jpg", desc: "Fresca y crujiente para ensaladas.", unit: "por libra", price: 2400 },
+        { id: "ve-ra-2", name: "Papa Criolla", img: "images/criollas.jpg", desc: "Dorada y cremosa, ideal para sopas.", unit: "por libra", price: 3800 },
+        { id: "ve-ra-3", name: "Yuca", img: "images/yucas.jpg", desc: "Base perfecta para frituras.", unit: "por libra", price: 3200 },
+        { id: "ve-ra-4", name: "Rábano", img: "images/rabanos.jpg", desc: "Picante suave y refrescante.", unit: "por libra", price: 2900 }
       ],
       "Hojas": [
-        { id: "ve-ho-1", name: "Lechuga Romana", img: "https://via.placeholder.com/600x450?text=Lechuga", desc: "Base ideal para ensaladas.", unit: "por unidad", price: 3500 },
-        { id: "ve-ho-2", name: "Espinaca", img: "https://via.placeholder.com/600x450?text=Espinaca", desc: "Fresca para salteados.", unit: "por libra", price: 4600 },
-        { id: "ve-ho-3", name: "Acelga", img: "https://via.placeholder.com/600x450?text=Acelga", desc: "Fibrosa y nutritiva.", unit: "por libra", price: 3800 },
-        { id: "ve-ho-4", name: "Col rizada", img: "https://via.placeholder.com/600x450?text=Col+Rizada", desc: "Textura firme, rica en minerales.", unit: "por libra", price: 5200 }
+        { id: "ve-ho-1", name: "Lechuga Romana", img: "images/lechugas.jpg", desc: "Base ideal para ensaladas.", unit: "por unidad", price: 3500 },
+        { id: "ve-ho-2", name: "Espinaca", img: "espinacas.jpg", desc: "Fresca para salteados.", unit: "por libra", price: 4600 },
+        { id: "ve-ho-3", name: "Acelga", img: "images/acelgas.jpg", desc: "Fibrosa y nutritiva.", unit: "por libra", price: 3800 },
+        { id: "ve-ho-4", name: "Col rizada", img: "images/coles.jpg", desc: "Textura firme, rica en minerales.", unit: "por libra", price: 5200 }
       ],
       "Tallos": [
-        { id: "ve-ta-1", name: "Apio", img: "https://via.placeholder.com/600x450?text=Apio", desc: "Crujiente y aromático.", unit: "por unidad", price: 2800 },
-        { id: "ve-ta-2", name: "Puerro", img: "https://via.placeholder.com/600x450?text=Puerro", desc: "Suave y delicado para sopas.", unit: "por unidad", price: 4500 },
-        { id: "ve-ta-3", name: "Espárragos", img: "https://via.placeholder.com/600x450?text=Esp%C3%A1rragos", desc: "Tiernos y gourmet.", unit: "por libra", price: 13200 },
-        { id: "ve-ta-4", name: "Brotes de bambú", img: "https://via.placeholder.com/600x450?text=Bamb%C3%BA", desc: "Toque asiático a tus platos.", unit: "por libra", price: 9800 }
+        { id: "ve-ta-1", name: "Apio", img: "images/apios.jpg", desc: "Crujiente y aromático.", unit: "por unidad", price: 2800 },
+        { id: "ve-ta-2", name: "Puerro", img: "images/puerros.jpg", desc: "Suave y delicado para sopas.", unit: "por unidad", price: 4500 },
+        { id: "ve-ta-3", name: "Espárragos", img: "images/esparragos.jpg", desc: "Tiernos y gourmet.", unit: "por libra", price: 13200 },
+        { id: "ve-ta-4", name: "Brotes de bambú", img: "bambus.jpg", desc: "Toque asiático a tus platos.", unit: "por libra", price: 9800 }
       ],
       "Bulbos": [
         { id: "ve-bu-1", name: "Cebolla cabezona", img: "https://via.placeholder.com/600x450?text=Cebolla", desc: "Infaltable en la cocina.", unit: "por libra", price: 2200 },
@@ -500,5 +500,6 @@ const formatCOP = (value) =>
   });
 
   
+
 
 
