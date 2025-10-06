@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merkacol - Tienda Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Merkacol</h1>
+    <nav>
+      <ul>
+        <li><a href="#frutas">Frutas</a></li>
+        <li><a href="#verduras">Verduras</a></li>
+        <li><a href="#carnes">Carnes</a></li>
+        <li><a href="#despensa">Despensa</a></li>
+        <li><a href="#charcuteria">Charcutería</a></li>
+      </ul>
+    </nav>
+    <div id="cart-icon">🛒<span id="cart-count">0</span></div>
+  </header>
+
+  <main id="main-content">
+    <section id="frutas" class="category">
+      <h2>Frutas</h2>
+      <div id="frutas-container" class="subcategory-container"></div>
+    </section>
+
+    <section id="verduras" class="category">
+      <h2>Verduras</h2>
+      <div id="verduras-container" class="subcategory-container"></div>
+    </section>
+
+    <section id="carnes" class="category">
+      <h2>Carnes</h2>
+      <div id="carnes-container" class="subcategory-container"></div>
+    </section>
+
+    <section id="despensa" class="category">
+      <h2>Despensa</h2>
+      <div id="despensa-container" class="subcategory-container"></div>
+    </section>
+
+    <section id="charcuteria" class="category">
+      <h2>Charcutería</h2>
+      <div id="charcuteria-container" class="subcategory-container"></div>
+    </section>
+  </main>
+
+  <aside id="cart">
+    <h2>Carrito de Compras</h2>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <label for="unit-select">Mostrar en:</label>
+      <select id="unit-select">
+        <option value="kg">Kilogramos</option>
+        <option value="lb">Libras</option>
+      </select>
+      <h3>Total: <span id="cart-total">0</span></h3>
+      <button id="clear-cart">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <footer>
+    <p>© 2025 Merkacol - Supermercado en línea</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
