@@ -24,7 +24,7 @@ const formatCOP = (value) =>
         { id: "fr-ne-4", name: "Tamarindo", img: "images/tamarindos.jpg", desc: "Sabor neutro y versátil.", unit: "por libra", price: 7400 }
       ],
       "Dulces": [
-        { id: "fr-du-1", name: "Banano", img: "images/banano.jpg", desc: "Dulce y energético, fuente de potasio.", unit: "por libra", price: 2500 },
+        { id: "fr-du-1", name: "Banano", img: "images/bananos.jpg", desc: "Dulce y energético, fuente de potasio.", unit: "por libra", price: 2500 },
         { id: "fr-du-2", name: "Mango Tommy", img: "images/mangos.jpg", desc: "Maduración uniforme y pulpa carnosa.", unit: "por unidad", price: 4200 },
         { id: "fr-du-3", name: "Papaya", img: "images/papayas.jpg", desc: "Ideal para el desayuno.", unit: "por unidad", price: 7800 },
         { id: "fr-du-4", name: "Melón Cantalupo", img: "images/melones.jpg", desc: "Aroma fresco y sabor dulce.", unit: "por unidad", price: 9900 }
@@ -40,7 +40,7 @@ const formatCOP = (value) =>
       ],
       "Hojas": [
         { id: "ve-ho-1", name: "Lechuga Romana", img: "images/lechugas.jpg", desc: "Base ideal para ensaladas.", unit: "por unidad", price: 3500 },
-        { id: "ve-ho-2", name: "Espinaca", img: "espinacas.jpg", desc: "Fresca para salteados.", unit: "por libra", price: 4600 },
+        { id: "ve-ho-2", name: "Espinaca", img: "images/espinacas.jpg", desc: "Fresca para salteados.", unit: "por libra", price: 4600 },
         { id: "ve-ho-3", name: "Acelga", img: "images/acelgas.jpg", desc: "Fibrosa y nutritiva.", unit: "por libra", price: 3800 },
         { id: "ve-ho-4", name: "Col rizada", img: "images/coles.jpg", desc: "Textura firme, rica en minerales.", unit: "por libra", price: 5200 }
       ],
@@ -48,7 +48,7 @@ const formatCOP = (value) =>
         { id: "ve-ta-1", name: "Apio", img: "images/apios.jpg", desc: "Crujiente y aromático.", unit: "por unidad", price: 2800 },
         { id: "ve-ta-2", name: "Puerro", img: "images/puerros.jpg", desc: "Suave y delicado para sopas.", unit: "por unidad", price: 4500 },
         { id: "ve-ta-3", name: "Espárragos", img: "images/esparragos.jpg", desc: "Tiernos y gourmet.", unit: "por libra", price: 13200 },
-        { id: "ve-ta-4", name: "Brotes de bambú", img: "bambus.jpg", desc: "Toque asiático a tus platos.", unit: "por libra", price: 9800 }
+        { id: "ve-ta-4", name: "Brotes de bambú", img: "images/bambus.jpg", desc: "Toque asiático a tus platos.", unit: "por libra", price: 9800 }
       ],
       "Bulbos": [
         { id: "ve-bu-1", name: "Cebolla cabezona", img: "https://via.placeholder.com/600x450?text=Cebolla", desc: "Infaltable en la cocina.", unit: "por libra", price: 2200 },
@@ -500,6 +500,7 @@ const formatCOP = (value) =>
   });
 
   
+
 
 
 
