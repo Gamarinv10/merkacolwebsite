@@ -119,7 +119,7 @@ const formatCOP = (value) =>
       "Café": [
         { id: "de-ca-1", name: "Café molido 250g", img: "images/cafemolido.jpg", desc: "Tueste medio y balanceado.", unit: "por unidad", price: 12900 },
         { id: "de-ca-2", name: "Café de origen 250g", img: "images/cafedeorigen.jpg", desc: "Notas frutales y cacao.", unit: "por unidad", price: 18900 },
-        { id: "de-ca-3", name: "Café instantáneo 200g", img: "images/cafeinstantaeno.jpg", desc: "Rápido y práctico.", unit: "por unidad", price: 9800 },
+        { id: "de-ca-3", name: "Café instantáneo 200g", img: "images/cafeinstantaneo.jpg", desc: "Rápido y práctico.", unit: "por unidad", price: 9800 },
         { id: "de-ca-4", name: "Cápsulas x10", img: "images/capsulas.jpg", desc: "Compatibles con sistemas comunes.", unit: "por unidad", price: 21900 }
       ],
       "Chocolate": [
@@ -500,6 +500,7 @@ const formatCOP = (value) =>
   });
 
   
+
 
 
 
