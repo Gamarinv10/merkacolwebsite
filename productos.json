@@ -1,0 +1,33 @@
+[
+  { "nombre": "Limón Tahiti", "pagina": "frutas.html#acidas" },
+  { "nombre": "Maracuyá", "pagina": "frutas.html#acidas" },
+  { "nombre": "Piña Oro", "pagina": "frutas.html#acidas" },
+  { "nombre": "Mora de Castilla", "pagina": "frutas.html#acidas" },
+
+  { "nombre": "Manzana Roja", "pagina": "frutas.html#semiacidas" },
+  { "nombre": "Uva Isabella", "pagina": "frutas.html#semiacidas" },
+  { "nombre": "Ciruela", "pagina": "frutas.html#semiacidas" },
+  { "nombre": "Guayaba", "pagina": "frutas.html#semiacidas" },
+
+  { "nombre": "Aguacate Hass", "pagina": "frutas.html#neutras" },
+  { "nombre": "Coco", "pagina": "frutas.html#neutras" },
+  { "nombre": "Banano Verde", "pagina": "frutas.html#neutras" },
+  { "nombre": "Tamarindo", "pagina": "frutas.html#neutras" },
+
+  { "nombre": "Banano", "pagina": "frutas.html#dulces" },
+  { "nombre": "Mango Tommy", "pagina": "frutas.html#dulces" },
+  { "nombre": "Papaya", "pagina": "frutas.html#dulces" },
+  { "nombre": "Melón Cantalupo", "pagina": "frutas.html#dulces" },
+
+  { "nombre": "Queso Paipa", "pagina": "charcuteria.html#quesos" },
+  { "nombre": "Jamón Serrano", "pagina": "charcuteria.html#carnes-maduradas" },
+  { "nombre": "Pepinillos", "pagina": "charcuteria.html#encurtidos" },
+  { "nombre": "Nueces mixtas", "pagina": "charcuteria.html#frutos-secos" },
+
+  { "nombre": "Carne de res", "pagina": "carnes.html#res" },
+  { "nombre": "Pollo entero", "pagina": "carnes.html#pollo" },
+  { "nombre": "Costilla de cerdo", "pagina": "carnes.html#cerdo" },
+  { "nombre": "Pechuga deshuesada", "pagina": "carnes.html#pollo" }
+
+  
+]

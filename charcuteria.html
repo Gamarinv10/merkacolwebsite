@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charcutería | Merkacol</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Merkacol</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="frutas.html">Frutas</a>
+        <a href="verduras.html">Verduras</a>
+        <a href="carnes.html">Carnes</a>
+        <a href="despensa.html">Despensa</a>
+        <a href="charcuteria.html" class="active">Charcutería</a>
+      </nav>
+      <button id="openCart" class="cart-button">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quesos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Charcutería: Quesos</h2>
+        <p>Selección de quesos frescos y madurados</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Mozzarella" alt="Queso Mozzarella" />
+          <div class="card__body">
+            <h3 class="card__title">Queso Mozzarella 250g</h3>
+            <p class="card__desc">Fundente y suave, ideal para pizzas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$9.800 por unidad</span>
+            <button class="add-button" data-id="ch-qu-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Campesino" alt="Queso Campesino" />
+          <div class="card__body">
+            <h3 class="card__title">Queso Campesino 500g</h3>
+            <p class="card__desc">Fresco, salado y tradicional.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$7.500 por unidad</span>
+            <button class="add-button" data-id="ch-qu-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Paipa" alt="Queso Paipa" />
+          <div class="card__body">
+            <h3 class="card__title">Queso Paipa 250g</h3>
+            <p class="card__desc">Madurado, con sabor fuerte.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$11.200 por unidad</span>
+            <button class="add-button" data-id="ch-qu-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Azul" alt="Queso Azul" />
+          <div class="card__body">
+            <h3 class="card__title">Queso Azul 150g</h3>
+            <p class="card__desc">Intenso y cremoso, ideal para tablas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$13.900 por unidad</span>
+            <button class="add-button" data-id="ch-qu-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <!-- Frutos secos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Charcutería: Frutos secos</h2>
+        <p>Snacks saludables y energéticos</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Nueces" alt="Nueces mixtas 200g" />
+          <div class="card__body">
+            <h3 class="card__title">Nueces mixtas 200g</h3>
+            <p class="card__desc">Mezcla de almendras, nueces y maní.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$9.500 por unidad</span>
+            <button class="add-button" data-id="ch-fr-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Man%C3%AD" alt="Maní tostado 250g" />
+          <div class="card__body">
+            <h3 class="card__title">Maní tostado 250g</h3>
+            <p class="card__desc">Crujiente y salado.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.800 por unidad</span>
+            <button class="add-button" data-id="ch-fr-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Almendras" alt="Almendras 150g" />
+          <div class="card__body">
+            <h3 class="card__title">Almendras 150g</h3>
+            <p class="card__desc">Fuente de energía y antioxidantes.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$8.900 por unidad</span>
+            <button class="add-button" data-id="ch-fr-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Uvas+Pasas" alt="Uvas pasas 200g" />
+          <div class="card__body">
+            <h3 class="card__title">Uvas pasas 200g</h3>
+            <p class="card__desc">Dulces y naturales.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$5.600 por unidad</span>
+            <button class="add-button" data-id="ch-fr-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Carnes maduradas -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Charcutería: Carnes maduradas</h2>
+        <p>Sabores intensos para tablas y bocados</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Jam%C3%B3n+Serrano" alt="Jamón serrano 100g" />
+          <div class="card__body">
+            <h3 class="card__title">Jamón serrano 100g</h3>
+            <p class="card__desc">Curado y aromático.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$11.900 por unidad</span>
+            <button class="add-button" data-id="ch-ca-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Salami" alt="Salami 150g" />
+          <div class="card__body">
+            <h3 class="card__title">Salami 150g</h3>
+            <p class="card__desc">Sabor especiado y firme.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$9.800 por unidad</span>
+            <button class="add-button" data-id="ch-ca-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chorizo+Espa%C3%B1ol" alt="Chorizo español 200g" />
+          <div class="card__body">
+            <h3 class="card__title">Chorizo español 200g</h3>
+            <p class="card__desc">Intenso y ahumado.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$10.500 por unidad</span>
+            <button class="add-button" data-id="ch-ca-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Prosciutto" alt="Prosciutto 100g" />
+          <div class="card__body">
+            <h3 class="card__title">Prosciutto 100g</h3>
+            <p class="card__desc">Delicado y gourmet.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$12.800 por unidad</span>
+            <button class="add-button" data-id="ch-ca-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Encurtidos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Charcutería: Encurtidos</h2>
+        <p>Complementos ácidos y sabrosos para tus platos</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Pepinillos" alt="Pepinillos 300g" />
+          <div class="card__body">
+            <h3 class="card__title">Pepinillos 300g</h3>
+            <p class="card__desc">Crujientes y ácidos.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$6.200 por unidad</span>
+            <button class="add-button" data-id="ch-en-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Cebollitas" alt="Cebollitas encurtidas 250g" />
+          <div class="card__body">
+            <h3 class="card__title">Cebollitas encurtidas 250g</h3>
+            <p class="card__desc">Dulces y vinagradas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$5.800 por unidad</span>
+            <button class="add-button" data-id="ch-en-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Aceitunas" alt="Aceitunas verdes 200g" />
+          <div class="card__body">
+            <h3 class="card__title">Aceitunas verdes 200g</h3>
+            <p class="card__desc">Con hueso, sabor intenso.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$7.400 por unidad</span>
+            <button class="add-button" data-id="ch-en-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Mix+Encurtidos" alt="Mix encurtidos 300g" />
+          <div class="card__body">
+            <h3 class="card__title">Mix encurtidos 300g</h3>
+            <p class="card__desc">Combinación de vegetales en vinagre.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$6.800 por unidad</span>
+            <button class="add-button" data-id="ch-en-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Carrito -->
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-panel__header">
+        <h2>Carrito de compra</h2>
+        <button id="closeCart" class="icon-button" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div id="cartItems" class="cart-panel__items"></div>
+      <div class="cart-panel__summary">
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0</strong>
+        </div>
+        <div class="summary__row">
+          <span>Envío</span>
+          <strong id="cartShipping">$0</strong>
+        </div>
+        <div class="summary__row summary__total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <div class="cart-panel__actions">
+          <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+          <button id="checkout" class="btn btn--primary">Proceder al pago</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+        <p>Entrega en Bogotá y alrededores.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carnes | Merkacol</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Merkacol</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="frutas.html">Frutas</a>
+        <a href="verduras.html">Verduras</a>
+        <a href="carnes.html" class="active">Carnes</a>
+        <a href="despensa.html">Despensa</a>
+        <a href="charcuteria.html">Charcutería</a>
+      </nav>
+      <button id="openCart" class="cart-button">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Pollo -->
+    <section id="pollo" class="container section">
+      <div class="section__header">
+        <h2>Carnes: Pollo</h2>
+        <p>Cortes frescos y versátiles de pollo</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Pechuga" alt="Pechuga deshuesada" />
+          <div class="card__body">
+            <h3 class="card__title">Pechuga deshuesada</h3>
+            <p class="card__desc">Magra, ideal para plancha.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$12.900 por libra</span>
+            <button class="add-button" data-id="ca-po-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Muslo" alt="Muslo con piel" />
+          <div class="card__body">
+            <h3 class="card__title">Muslo con piel</h3>
+            <p class="card__desc">Jugoso y sabroso.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$9.800 por libra</span>
+            <button class="add-button" data-id="ca-po-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Alitas" alt="Alitas BBQ" />
+          <div class="card__body">
+            <h3 class="card__title">Alitas BBQ</h3>
+            <p class="card__desc">Perfectas para parrilla.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$13.200 por libra</span>
+            <button class="add-button" data-id="ca-po-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Pollo+Entero" alt="Pollo entero" />
+          <div class="card__body">
+            <h3 class="card__title">Pollo entero</h3>
+            <p class="card__desc">Ideal para asar.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$24.900 por unidad</span>
+            <button class="add-button" data-id="ca-po-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <!-- Cerdo -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Carnes: Cerdo</h2>
+        <p>Cortes sabrosos y versátiles para múltiples preparaciones</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Lomo+Cerdo" alt="Lomo de cerdo" />
+          <div class="card__body">
+            <h3 class="card__title">Lomo de cerdo</h3>
+            <p class="card__desc">Corte tierno para horno.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$15.800 por libra</span>
+            <button class="add-button" data-id="ca-ce-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chuleta" alt="Chuleta" />
+          <div class="card__body">
+            <h3 class="card__title">Chuleta</h3>
+            <p class="card__desc">Clásica para almuerzo.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$13.900 por libra</span>
+            <button class="add-button" data-id="ca-ce-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Tocino" alt="Tocino" />
+          <div class="card__body">
+            <h3 class="card__title">Tocino</h3>
+            <p class="card__desc">Crujiente y aromático.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$16.800 por libra</span>
+            <button class="add-button" data-id="ca-ce-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Costillas" alt="Costillas BBQ" />
+          <div class="card__body">
+            <h3 class="card__title">Costillas BBQ</h3>
+            <p class="card__desc">Para parrilla y horno.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$18.900 por libra</span>
+            <button class="add-button" data-id="ca-ce-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Res -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Carnes: Res</h2>
+        <p>Cortes tradicionales y premium para todo tipo de platos</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Punta+de+Anca" alt="Punta de anca" />
+          <div class="card__body">
+            <h3 class="card__title">Punta de anca</h3>
+            <p class="card__desc">Sabor intenso, jugoso.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$21.900 por libra</span>
+            <button class="add-button" data-id="ca-re-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Lomo+Fino" alt="Lomo fino" />
+          <div class="card__body">
+            <h3 class="card__title">Lomo fino</h3>
+            <p class="card__desc">Corte premium.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$32.900 por libra</span>
+            <button class="add-button" data-id="ca-re-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Molida+Res" alt="Molida de res" />
+          <div class="card__body">
+            <h3 class="card__title">Molida de res</h3>
+            <p class="card__desc">Versátil para salsas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$18.900 por libra</span>
+            <button class="add-button" data-id="ca-re-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Sobrebarriga" alt="Sobrebarriga" />
+          <div class="card__body">
+            <h3 class="card__title">Sobrebarriga</h3>
+            <p class="card__desc">Para cocción lenta.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$19.900 por libra</span>
+            <button class="add-button" data-id="ca-re-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pescados -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Carnes: Pescados</h2>
+        <p>Pescados frescos y nutritivos para una dieta balanceada</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Salm%C3%B3n" alt="Salmón" />
+          <div class="card__body">
+            <h3 class="card__title">Salmón</h3>
+            <p class="card__desc">Graso y nutritivo.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$36.900 por libra</span>
+            <button class="add-button" data-id="ca-pe-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Trucha" alt="Trucha" />
+          <div class="card__body">
+            <h3 class="card__title">Trucha</h3>
+            <p class="card__desc">Fresco de cultivo.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$28.900 por libra</span>
+            <button class="add-button" data-id="ca-pe-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Tilapia" alt="Tilapia" />
+          <div class="card__body">
+            <h3 class="card__title">Tilapia</h3>
+            <p class="card__desc">Suave y versátil.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$21.900 por libra</span>
+            <button class="add-button" data-id="ca-pe-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=R%C3%B3balo" alt="Róbalo" />
+          <div class="card__body">
+            <h3 class="card__title">Róbalo</h3>
+            <p class="card__desc">Textura firme.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$39.900 por libra</span>
+            <button class="add-button" data-id="ca-pe-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mariscos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Carnes: Mariscos</h2>
+        <p>Delicias del mar para platos especiales</p>
+
+
+              <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Langostinos" alt="Langostinos" />
+          <div class="card__body">
+            <h3 class="card__title">Langostinos</h3>
+            <p class="card__desc">Delicados y sabrosos, ideales para salteados.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$42.900 por libra</span>
+            <button class="add-button" data-id="ca-ma-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Camarones" alt="Camarones" />
+          <div class="card__body">
+            <h3 class="card__title">Camarones</h3>
+            <p class="card__desc">Versátiles para arroz, pasta y ceviches.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$39.500 por libra</span>
+            <button class="add-button" data-id="ca-ma-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Pulpo" alt="Pulpo" />
+          <div class="card__body">
+            <h3 class="card__title">Pulpo</h3>
+            <p class="card__desc">Textura firme, sabor intenso.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$49.900 por libra</span>
+            <button class="add-button" data-id="ca-ma-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Mejillones" alt="Mejillones" />
+          <div class="card__body">
+            <h3 class="card__title">Mejillones</h3>
+            <p class="card__desc">Perfectos para sopas y arroces.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$34.900 por libra</span>
+            <button class="add-button" data-id="ca-ma-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Carrito -->
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-panel__header">
+        <h2>Carrito de compra</h2>
+        <button id="closeCart" class="icon-button" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div id="cartItems" class="cart-panel__items"></div>
+      <div class="cart-panel__summary">
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0</strong>
+        </div>
+        <div class="summary__row">
+          <span>Envío</span>
+          <strong id="cartShipping">$0</strong>
+        </div>
+        <div class="summary__row summary__total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <div class="cart-panel__actions">
+          <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+          <button id="checkout" class="btn btn--primary">Proceder al pago</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+        <p>Entrega en Bogotá y alrededores.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

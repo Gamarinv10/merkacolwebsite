@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Despensa | Merkacol</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Merkacol</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="frutas.html">Frutas</a>
+        <a href="verduras.html">Verduras</a>
+        <a href="carnes.html">Carnes</a>
+        <a href="despensa.html" class="active">Despensa</a>
+        <a href="charcuteria.html">Charcutería</a>
+      </nav>
+      <button id="openCart" class="cart-button">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Arroz y granos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Despensa: Arroz y granos</h2>
+        <p>Productos básicos para tu cocina diaria</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Arroz+Blanco" alt="Arroz blanco 1kg" />
+          <div class="card__body">
+            <h3 class="card__title">Arroz blanco 1kg</h3>
+            <p class="card__desc">Grano largo, suave y rendidor.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.200 por unidad</span>
+            <button class="add-button" data-id="de-ag-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Lentejas" alt="Lentejas 500g" />
+          <div class="card__body">
+            <h3 class="card__title">Lentejas 500g</h3>
+            <p class="card__desc">Ricas en proteína vegetal.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.800 por unidad</span>
+            <button class="add-button" data-id="de-ag-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Fr%C3%ADjol" alt="Fríjol rojo 500g" />
+          <div class="card__body">
+            <h3 class="card__title">Fríjol rojo 500g</h3>
+            <p class="card__desc">Ideal para sopas y guisos.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.500 por unidad</span>
+            <button class="add-button" data-id="de-ag-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Ma%C3%ADz+Peto" alt="Maíz peto 500g" />
+          <div class="card__body">
+            <h3 class="card__title">Maíz peto 500g</h3>
+            <p class="card__desc">Perfecto para cocción lenta.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.900 por unidad</span>
+            <button class="add-button" data-id="de-ag-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+      <!-- Café -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Despensa: Café</h2>
+        <p>Variedades de café colombiano para todos los gustos</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Molido" alt="Café molido 250g" />
+          <div class="card__body">
+            <h3 class="card__title">Café molido 250g</h3>
+            <p class="card__desc">Tostado medio, aroma intenso.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$6.800 por unidad</span>
+            <button class="add-button" data-id="de-ca-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Instant%C3%A1neo" alt="Café instantáneo 100g" />
+          <div class="card__body">
+            <h3 class="card__title">Café instantáneo 100g</h3>
+            <p class="card__desc">Práctico y rápido.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$5.200 por unidad</span>
+            <button class="add-button" data-id="de-ca-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Org%C3%A1nico" alt="Café orgánico 250g" />
+          <div class="card__body">
+            <h3 class="card__title">Café orgánico 250g</h3>
+            <p class="card__desc">Cultivo sostenible.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$7.900 por unidad</span>
+            <button class="add-button" data-id="de-ca-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Premium" alt="Café premium 500g" />
+          <div class="card__body">
+            <h3 class="card__title">Café premium 500g</h3>
+            <p class="card__desc">Selección especial de origen.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$12.500 por unidad</span>
+            <button class="add-button" data-id="de-ca-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Chocolate -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Despensa: Chocolate</h2>
+        <p>Tabletas y bebidas con sabor auténtico</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chocolate+de+Mesa" alt="Chocolate de mesa 250g" />
+          <div class="card__body">
+            <h3 class="card__title">Chocolate de mesa 250g</h3>
+            <p class="card__desc">Tradicional para bebida caliente.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.900 por unidad</span>
+            <button class="add-button" data-id="de-ch-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chocolate+Amargo" alt="Chocolate amargo 70%" />
+          <div class="card__body">
+            <h3 class="card__title">Chocolate amargo 70%</h3>
+            <p class="card__desc">Intenso y antioxidante.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$6.200 por unidad</span>
+            <button class="add-button" data-id="de-ch-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chocolate+con+Leche" alt="Chocolate con leche" />
+          <div class="card__body">
+            <h3 class="card__title">Chocolate con leche</h3>
+            <p class="card__desc">Suave y cremoso.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$5.800 por unidad</span>
+            <button class="add-button" data-id="de-ch-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Cacao+en+Polvo" alt="Cacao en polvo 200g" />
+          <div class="card__body">
+            <h3 class="card__title">Cacao en polvo 200g</h3>
+            <p class="card__desc">Ideal para repostería.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$7.400 por unidad</span>
+            <button class="add-button" data-id="de-ch-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pastas y enlatados -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Despensa: Pastas y enlatados</h2>
+        <p>Soluciones prácticas para tu cocina</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Spaghetti" alt="Spaghetti 500g" />
+          <div class="card__body">
+            <h3 class="card__title">Spaghetti 500g</h3>
+            <p class="card__desc">Pasta italiana de trigo duro.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.200 por unidad</span>
+            <button class="add-button" data-id="de-pa-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Macarrones" alt="Macarrones 500g" />
+          <div class="card__body">
+            <h3 class="card__title">Macarrones 500g</h3>
+            <p class="card__desc">Ideales para gratinar.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.400 por unidad</span>
+            <button class="add-button" data-id="de-pa-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=At%C3%BAn" alt="Atún en agua 160g" />
+          <div class="card__body">
+            <h3 class="card__title">Atún en agua 160g</h3>
+            <p class="card__desc">Fuente de proteína rápida.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.900 por unidad</span>
+            <button class="add-button" data-id="de-en-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Ma%C3%ADz+Enlatado" alt="Maíz enlatado 300g" />
+          <div class="card__body">
+            <h3 class="card__title">Maíz enlatado 300g</h3>
+            <p class="card__desc">Dulce y listo para servir.</p>
+          </div>
+          <div class
+          
+         <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Tomate+Enlatado" alt="Tomate enlatado 400g" />
+          <div class="card__body">
+            <h3 class="card__title">Tomate enlatado 400g</h3>
+            <p class="card__desc">Listo para salsas y guisos.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$5.200 por unidad</span>
+            <button class="add-button" data-id="de-en-2">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Carrito -->
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-panel__header">
+        <h2>Carrito de compra</h2>
+        <button id="closeCart" class="icon-button" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div id="cartItems" class="cart-panel__items"></div>
+      <div class="cart-panel__summary">
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0</strong>
+        </div>
+        <div class="summary__row">
+          <span>Envío</span>
+          <strong id="cartShipping">$0</strong>
+        </div>
+        <div class="summary__row summary__total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <div class="cart-panel__actions">
+          <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+          <button id="checkout" class="btn btn--primary">Proceder al pago</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+        <p>Entrega en Bogotá y alrededores.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+         

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merkacol - Supermercado en línea</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo"><img src="images/logomerkacol.JPG" alt="Logo de Merkacol" height="50"></a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <!-- <a href="#promociones">Promociones</a> -->
+        <a href="frutas.html">Frutas</a>
+        <a href="verduras.html">Verduras</a>
+        <a href="carnes.html">Carnes</a>
+        <a href="despensa.html">Despensa</a>
+        <a href="charcuteria.html">Charcutería</a>
+      </nav>
+      <button id="openCart" class="cart-button">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1>Bienvenido a Merkacol</h1>
+        <p>Tu supermercado en línea con productos frescos, precios claros y entregas rápidas.</p>
+        <div class="hero__actions">
+          <a href="#promociones" class="btn btn--primary">Ver promociones</a>
+          <!-- <a href="frutas.html" class="btn btn--ghost">Explorar frutas</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra de búsqueda -->
+  <section class="search-section container">
+  <h2>¿Qué producto estás buscando?</h2>
+  <input type="text" id="searchInput" placeholder="Buscar frutas, verduras, carnes..." />
+  <ul id="suggestions" class="suggestions-list"></ul>
+</section>
+
+
+
+    <!-- Información general -->
+    <section class="container section">
+      <h2>Sobre nosotros</h2>
+      <p>En Merkacol nos dedicamos a ofrecer productos frescos, seleccionados y de alta calidad. Nuestro compromiso es brindarte una experiencia de compra cómoda, segura y rápida desde la comodidad de tu hogar.</p>
+      <p>Contamos con una amplia variedad de frutas, verduras, carnes, productos de despensa y charcutería. ¡Gracias por elegirnos!</p>
+    </section>
+
+    <!-- Promociones -->
+    <section id="promociones" class="section container">
+      <div class="section__header">
+        <h2>🎉 Promociones y ofertas</h2>
+        <p>Productos seleccionados con descuentos especiales por tiempo limitado</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="images/pinagolden.jpg" alt="Piña Oro" />
+          <div class="card__body">
+            <h3 class="card__title">Piña Oro</h3>
+            <p class="card__desc">¡Llévate 2 por el precio de 1 esta semana!</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.600 por unidad</span>
+            <button class="add-button" data-id="fr-ac-3">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Promo" alt="Queso Mozzarella" />
+          <div class="card__body">
+            <h3 class="card__title">Queso Mozzarella 250g</h3>
+            <p class="card__desc">20% de descuento por compras superiores a 2 unidades</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$7.840 por unidad</span>
+            <button class="add-button" data-id="ch-qu-1">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Arroz+Promo" alt="Arroz blanco 1kg" />
+          <div class="card__body">
+            <h3 class="card__title">Arroz blanco 1kg</h3>
+            <p class="card__desc">Precio especial por lanzamiento</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.200 por unidad</span>
+            <button class="add-button" data-id="de-ag-1">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+        <!-- Productos destacados (opcional) -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>🛒 Productos destacados</h2>
+        <p>Algunos de nuestros productos más populares</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Manzana+Roja" alt="Manzana Roja" />
+          <div class="card__body">
+            <h3 class="card__title">Manzana Roja</h3>
+            <p class="card__desc">Crujiente y equilibrada, perfecta para snacks.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$7.900 por libra</span>
+            <button class="add-button" data-id="fr-sa-1">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Lechuga+Romana" alt="Lechuga Romana" />
+          <div class="card__body">
+            <h3 class="card__title">Lechuga Romana</h3>
+            <p class="card__desc">Base ideal para ensaladas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.500 por unidad</span>
+            <button class="add-button" data-id="ve-ho-1">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Pechuga+Pollo" alt="Pechuga de Pollo" />
+          <div class="card__body">
+            <h3 class="card__title">Pechuga deshuesada</h3>
+            <p class="card__desc">Magra, ideal para plancha.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$12.900 por libra</span>
+            <button class="add-button" data-id="ca-po-1">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Mozzarella" alt="Queso Mozzarella" />
+          <div class="card__body">
+            <h3 class="card__title">Queso Mozzarella 250g</h3>
+            <p class="card__desc">Fundente y suave.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$9.800 por unidad</span>
+            <button class="add-button" data-id="ch-qu-1">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <!-- Carrito -->
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-panel__header">
+        <h2>Carrito de compra</h2>
+        <button id="closeCart" class="icon-button" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div id="cartItems" class="cart-panel__items"></div>
+      <div class="cart-panel__summary">
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0</strong>
+        </div>
+        <div class="summary__row">
+          <span>Envío</span>
+          <strong id="cartShipping">$0</strong>
+        </div>
+        <div class="summary__row summary__total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <div class="cart-panel__actions">
+          <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+          <button id="checkout" class="btn btn--primary">Proceder al pago</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+        <p>Entrega en Bogotá y alrededores.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

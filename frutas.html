@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frutas | Merkacol</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Merkacol</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="frutas.html" class="active">Frutas</a>
+        <a href="verduras.html">Verduras</a>
+        <a href="carnes.html">Carnes</a>
+        <a href="despensa.html">Despensa</a>
+        <a href="charcuteria.html">Charcutería</a>
+      </nav>
+      <button id="openCart" class="cart-button">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Frutas ácidas -->
+    <section id="acidas" class="container section">
+      <div class="section__header">
+        <h2>Frutas ácidas</h2>
+        <p>Sabores intensos y refrescantes</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Lim%C3%B3n+Tahiti" alt="Limón Tahiti" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Limón Tahiti</h3>
+            <p class="card__desc">Ideal para jugos y aderezos.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$1.800 por libra</span>
+            <button class="add-button" data-id="fr-ac-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Maracuy%C3%A1" alt="Maracuyá" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Maracuyá</h3>
+            <p class="card__desc">Aromático y ácido, perfecto para jugos.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.600 por libra</span>
+            <button class="add-button" data-id="fr-ac-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Pi%C3%B1a+Oro" alt="Piña Oro" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Piña Oro</h3>
+            <p class="card__desc">Dulce y ácida, variedad premium.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.600 por unidad</span>
+            <button class="add-button" data-id="fr-ac-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Mora+de+Castilla" alt="Mora de Castilla" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Mora de Castilla</h3>
+            <p class="card__desc">Fruta silvestre, ideal para mermeladas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.200 por libra</span>
+            <button class="add-button" data-id="fr-ac-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Frutas semiácidas -->
+    <section id="semiacidas" class="container section">
+      <div class="section__header">
+        <h2>Frutas semiácidas</h2>
+        <p>Equilibrio entre dulzor y acidez</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Manzana+Roja" alt="Manzana Roja" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Manzana Roja</h3>
+            <p class="card__desc">Crujiente y ligeramente dulce.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.900 por unidad</span>
+            <button class="add-button" data-id="fr-se-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Uva+Isabella" alt="Uva Isabella" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Uva Isabella</h3>
+            <p class="card__desc">Pequeña, dulce y aromática.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.200 por libra</span>
+            <button class="add-button" data-id="fr-se-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Ciruela" alt="Ciruela" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Ciruela</h3>
+            <p class="card__desc">Fruta de hueso, jugosa y vibrante.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.800 por libra</span>
+            <button class="add-button" data-id="fr-se-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Guayaba" alt="Guayaba" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Guayaba</h3>
+            <p class="card__desc">Aromática y rica en fibra.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$2.900 por libra</span>
+            <button class="add-button" data-id="fr-se-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Frutas neutras -->
+    <section id="neutras" class="container section">
+      <div class="section__header">
+        <h2>Frutas neutras</h2>
+        <p>Texturas suaves y sabores delicados</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Aguacate+Hass" alt="Aguacate Hass" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Aguacate Hass</h3>
+            <p class="card__desc">Cremoso y versátil.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.800 por unidad</span>
+            <button class="add-button" data-id="fr-ne-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Coco" alt="Coco" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Coco</h3>
+            <p class="card__desc">Pulpa firme y agua refrescante.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.500 por unidad</span>
+            <button class="add-button" data-id="fr-ne-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Banano+Verde" alt="Banano Verde" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Banano Verde</h3>
+            <p class="card__desc">Ideal para cocción y fritura.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$2.200 por libra</span>
+            <button class="add-button" data-id="fr-ne-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Tamarindo" alt="Tamarindo" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Tamarindo</h3>
+            <p class="card__desc">Pulpa ácida, perfecta para salsas y jugos.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.400 por libra</span>
+            <button class="add-button" data-id="fr-ne-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Frutas dulces -->
+    <section id="dulces" class="container section">
+      <div class="section__header">
+        <h2>Frutas dulces</h2>
+        <p>Sabores suaves y agradables para todos los gustos</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Banano" alt="Banano" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Banano</h3>
+            <p class="card__desc">Dulce y energético, ideal para snacks.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$2.000 por libra</span>
+            <button class="add-button" data-id="fr-du-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Mango+Tommy" alt="Mango Tommy" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Mango Tommy</h3>
+            <p class="card__desc">Pulpa firme y dulce, ideal para postres.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.600 por unidad</span>
+            <button class="add-button" data-id="fr-du-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Papaya" alt="Papaya" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Papaya</h3>
+            <p class="card__desc">Suave y digestiva, perfecta para desayunos.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.800 por libra</span>
+            <button class="add-button" data-id="fr-du-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x450?text=Mel%C3%B3n+Cantalupo" alt="Melón Cantalupo" class="card__media" />
+          <div class="card__body">
+            <h3 class="card__title">Melón Cantalupo</h3>
+            <p class="card__desc">Aromático y jugoso, ideal para ensaladas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.200 por unidad</span>
+            <button class="add-button" data-id="fr-du-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <!-- Carrito -->
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-panel__header">
+        <h2>Carrito de compra</h2>
+        <button id="closeCart" class="icon-button" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div id="cartItems" class="cart-panel__items"></div>
+      <div class="cart-panel__summary">
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0</strong>
+        </div>
+        <div class="summary__row">
+          <span>Envío</span>
+          <strong id="cartShipping">$0</strong>
+        </div>
+        <div class="summary__row summary__total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <div class="cart-panel__actions">
+          <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+          <button id="checkout" class="btn btn--primary">Proceder al pago</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+        <p>Entrega en Bogotá y alrededores.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

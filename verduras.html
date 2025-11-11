@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verduras | Merkacol</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Merkacol</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="frutas.html">Frutas</a>
+        <a href="verduras.html" class="active">Verduras</a>
+        <a href="carnes.html">Carnes</a>
+        <a href="despensa.html">Despensa</a>
+        <a href="charcuteria.html">Charcutería</a>
+      </nav>
+      <button id="openCart" class="cart-button">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Raíces -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Verduras: Raíces</h2>
+        <p>Verduras subterráneas ricas en nutrientes</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Zanahoria" alt="Zanahoria" />
+          <div class="card__body">
+            <h3 class="card__title">Zanahoria</h3>
+            <p class="card__desc">Fresca y crujiente para ensaladas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$2.400 por libra</span>
+            <button class="add-button" data-id="ve-ra-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Papa+Criolla" alt="Papa Criolla" />
+          <div class="card__body">
+            <h3 class="card__title">Papa Criolla</h3>
+            <p class="card__desc">Dorada y cremosa, ideal para sopas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.800 por libra</span>
+            <button class="add-button" data-id="ve-ra-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Yuca" alt="Yuca" />
+          <div class="card__body">
+            <h3 class="card__title">Yuca</h3>
+            <p class="card__desc">Base perfecta para frituras.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.200 por libra</span>
+            <button class="add-button" data-id="ve-ra-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=R%C3%A1bano" alt="Rábano" />
+          <div class="card__body">
+            <h3 class="card__title">Rábano</h3>
+            <p class="card__desc">Picante suave y refrescante.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$2.900 por libra</span>
+            <button class="add-button" data-id="ve-ra-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <!-- Hojas -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Verduras: Hojas</h2>
+        <p>Verdes frescos para ensaladas y salteados</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Lechuga" alt="Lechuga Romana" />
+          <div class="card__body">
+            <h3 class="card__title">Lechuga Romana</h3>
+            <p class="card__desc">Base ideal para ensaladas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.500 por unidad</span>
+            <button class="add-button" data-id="ve-ho-1">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Espinaca" alt="Espinaca" />
+          <div class="card__body">
+            <h3 class="card__title">Espinaca</h3>
+            <p class="card__desc">Fresca para salteados.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$4.600 por libra</span>
+            <button class="add-button" data-id="ve-ho-2">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Acelga" alt="Acelga" />
+          <div class="card__body">
+            <h3 class="card__title">Acelga</h3>
+            <p class="card__desc">Fibrosa y nutritiva.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$3.800 por libra</span>
+            <button class="add-button" data-id="ve-ho-3">Añadir</button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__media" src="https://via.placeholder.com/600x450?text=Col+Rizada" alt="Col rizada" />
+          <div class="card__body">
+            <h3 class="card__title">Col rizada</h3>
+            <p class="card__desc">Textura firme, rica en minerales.</p>
+          </div>
+          <div class="card__footer">
+            <span class="price">$5.200 por libra</span>
+            <button class="add-button" data-id="ve-ho-4">Añadir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tallos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Verduras: Tallos</h2>
+        <p>Verduras fibrosas y aromáticas</p>
+      </div>
+      <div class="grid">
+        <!-- Apio, Puerro, Espárragos, Brotes de bambú -->
+        <!-- Estructura igual a las anteriores -->
+      </div>
+    </section>
+
+    <!-- Bulbos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Verduras: Bulbos</h2>
+        <p>Base aromática para tus preparaciones</p>
+      </div>
+      <div class="grid">
+        <!-- Cebolla, Ajo, Chalota, Cebolla puerro -->
+      </div>
+    </section>
+
+    <!-- Flores -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Verduras: Flores</h2>
+        <p>Verduras delicadas y nutritivas</p>
+      </div>
+      <div class="grid">
+        <!-- Brócoli, Coliflor, Alcachofa, Flor de calabaza -->
+      </div>
+    </section>
+
+    <!-- Frutos -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Verduras: Frutos</h2>
+        <p>Verduras jugosas y versátiles</p>
+      </div>
+      <div class="grid">
+        <!-- Tomate, Pimentón, Calabacín, Pepino -->
+      </div>
+    </section>
+
+    <!-- Semillas -->
+    <section class="container section">
+      <div class="section__header">
+        <h2>Verduras: Semillas</h2>
+
+
+            <!-- Carrito -->
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-panel__header">
+        <h2>Carrito de compra</h2>
+        <button id="closeCart" class="icon-button" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div id="cartItems" class="cart-panel__items"></div>
+      <div class="cart-panel__summary">
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0</strong>
+        </div>
+        <div class="summary__row">
+          <span>Envío</span>
+          <strong id="cartShipping">$0</strong>
+        </div>
+        <div class="summary__row summary__total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <div class="cart-panel__actions">
+          <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+          <button id="checkout" class="btn btn--primary">Proceder al pago</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+        <p>Entrega en Bogotá y alrededores.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
