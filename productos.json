@@ -19,15 +19,34 @@
   { "nombre": "Papaya", "pagina": "frutas.html#dulces" },
   { "nombre": "Melón Cantalupo", "pagina": "frutas.html#dulces" },
 
+  { "nombre": "Zanahoria", "pagina": "verduras.html#raices" },
+  { "nombre": "Papa criolla", "pagina": "verduras.html#raices" },
+  { "nombre": "Yuca", "pagina": "verduras.html#raices" },
+  { "nombre": "Rabano", "pagina": "verduras.html#raices" },
+
+  { "nombre": "Lechuga", "pagina": "verduras.html#hojas" },
+  { "nombre": "Espinaca", "pagina": "verduras.html#hojas" },
+  { "nombre": "Acelga", "pagina": "verduras.html#hojas" },
+  { "nombre": "Col", "pagina": "verduras.html#hojas" },
+
+  { "nombre": "Pechuga deshuesada", "pagina": "carnes.html#pollo" },
+  { "nombre": "Muslo", "pagina": "carnes.html#pollo" },
+  { "nombre": "Alitas", "pagina": "carnes.html#pollo" },
+  { "nombre": "Pollo", "pagina": "carnes.html#pollo" },
+
+  { "nombre": "Lomo de cerdo", "pagina": "carnes.html#cerdo" },
+  { "nombre": "Chuleta de cerdo", "pagina": "carnes.html#cerdo" },
+  { "nombre": "Tocino", "pagina": "carnes.html#cerdo" },
+  { "nombre": "Costillas de cerdo", "pagina": "carnes.html#cerdo" },
+
   { "nombre": "Queso Paipa", "pagina": "charcuteria.html#quesos" },
   { "nombre": "Jamón Serrano", "pagina": "charcuteria.html#carnes-maduradas" },
   { "nombre": "Pepinillos", "pagina": "charcuteria.html#encurtidos" },
   { "nombre": "Nueces mixtas", "pagina": "charcuteria.html#frutos-secos" },
 
-  { "nombre": "Carne de res", "pagina": "carnes.html#res" },
-  { "nombre": "Pollo entero", "pagina": "carnes.html#pollo" },
-  { "nombre": "Costilla de cerdo", "pagina": "carnes.html#cerdo" },
-  { "nombre": "Pechuga deshuesada", "pagina": "carnes.html#pollo" }
+ 
+
+ 
 
   
 ]
