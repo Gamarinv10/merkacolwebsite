@@ -167,3 +167,47 @@ searchInput?.addEventListener('input', () => {
 });
 
 
+
+
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const dotsContainer = document.querySelector('.dots');
+let currentIndex = 0;
+
+// Crear indicadores
+slides.forEach((_, i) => {
+  const dot = document.createElement('span');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => showSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+const dots = dotsContainer.querySelectorAll('span');
+
+function showSlide(index) {
+  slides[currentIndex].classList.remove('active');
+  dots[currentIndex].classList.remove('active');
+  currentIndex = index;
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+
+prevBtn.addEventListener('click', () => {
+  let newIndex = currentIndex - 1;
+  if (newIndex < 0) newIndex = slides.length - 1;
+  showSlide(newIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  let newIndex = (currentIndex + 1) % slides.length;
+  showSlide(newIndex);
+});
+
+
+// Auto-play opcional
+setInterval(() => {
+  let newIndex = (currentIndex + 1) % slides.length;
+  showSlide(newIndex);
+}, 5000);
+

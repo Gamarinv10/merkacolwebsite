@@ -6,6 +6,7 @@ body {
   color: #222;
   line-height: 1.6;
   margin: 0;
+
 }
 
 /* Contenedor */
@@ -17,7 +18,7 @@ body {
 
 /* Header fijo */
 .header {
-  background-color: #fff;
+  background-color: #00a443;
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
@@ -45,12 +46,12 @@ body {
 
 .nav a {
   font-size: 0.95rem;
-  color: #444;
+  color: #ffffff;
   padding: 0.25rem 0.5rem;
 }
 
 .nav a.active {
-  color: #2a7a2e;
+  color: #fee800;
   font-weight: bold;
 }
 
@@ -61,10 +62,114 @@ body {
   cursor: pointer;
 }
 
+#cartCount {
+
+  color:#fff;
+}
+
+
+
+/*Hero*/
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img,
+.slide video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Controles */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 4px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Indicadores */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: #fee800;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero {
+    max-height: 300px;
+  }
+  .prev, .next {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Secciones */
 .section {
   margin-top: 2rem;
+  max-width: 900px;
 }
+
 
 .section__header h2 {
   font-size: 1.2rem;
@@ -80,6 +185,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;
+  
 }
 
 /* Tarjetas */
@@ -145,7 +251,7 @@ body {
   max-width: 360px;
   height: 100%;
   background: #fff;
-  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  box-shadow: -2px 0 10px rgba(255, 255, 255, 0.1);
   transition: right 0.3s ease;
   z-index: 2000;
   display: flex;
@@ -248,14 +354,142 @@ body {
   visibility: visible;
 }
 
+
+
+
+
+
+
+
+
+
 /* Footer */
 .footer {
-  background: #f1f1f1;
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #555;
+  background: #00a443;
+  padding: 5px;
+  font-size: 0.9rem;
+  color: #ffffff;
 }
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 5px;
+  
+}
+
+.footer__left,
+.footer__center,
+.footer__right {
+  flex: 1;
+  min-width: 220px;
+  
+}
+
+.footer__left p,
+.footer__center p,
+.footer__right p {
+  margin: 0;
+}
+
+.footer__center {
+  text-align: center;
+}
+
+.footer__right {
+  text-align: right;
+}
+
+.footer__left a {
+  color: #fee800;
+  text-decoration: underline;
+}
+
+/* Íconos sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Colores originales */
+.youtube-icon {
+  filter: invert(18%) sepia(98%) saturate(7480%) hue-rotate(357deg) brightness(95%) contrast(90%);
+}
+
+.instagram-icon {
+  filter: invert(34%) sepia(92%) saturate(749%) hue-rotate(316deg) brightness(92%) contrast(91%);
+}
+
+.tiktok-icon {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .footer__right {
+    text-align: center;
+  }
+
+  .footer__left {
+    text-align: center;
+  }
+}
+
+
+
+
+
+.card__media {
+  position: relative;
+}
+
+.card__media img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.card__media:hover .img-default {
+  opacity: 0;
+}
+
+.card__media:hover .img-hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
 
 .qty-btn {
   background-color: #2a7a2e;

@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Carnes | Merkacol</title>
+  <link rel="icon" href="images/iconomerkacol.png" type="image/png">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo">Merkacol</a>
+      <a href="index.html" class="logo"><img src="images/logomerkacol.JPG" alt="Logo de Merkacol" height="50"></a>
       <nav class="nav">
         <a href="index.html">Inicio</a>
         <a href="frutas.html">Frutas</a>
@@ -31,7 +32,10 @@
       </div>
       <div class="grid">
         <article class="card">
-          <img class="card__media" src="images/pechugas.jpg" alt="Pechuga deshuesada" />
+          <div class="card__media">
+            <img src="images/pechugas.jpg" alt="pechugas" class="img-default" />
+            <img src="images/pechugas2.jpg" alt="pechugas2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Pechuga deshuesada</h3>
             <p class="card__desc">Magra, ideal para plancha.</p>
@@ -42,7 +46,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="images/muslos.jpg" alt="Muslo con piel" />
+          <div class="card__media">
+            <img src="images/muslos.jpg" alt="muslos" class="img-default" />
+            <img src="images/muslos2.jpg" alt="muslos2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Muslo con piel</h3>
             <p class="card__desc">Jugoso y sabroso.</p>
@@ -53,7 +60,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="images/alas.jpg" alt="Alitas BBQ" />
+          <div class="card__media">
+            <img src="images/alas.jpg" alt="alas" class="img-default" />
+            <img src="images/alas2.jpg" alt="alas2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Alitas BBQ</h3>
             <p class="card__desc">Perfectas para parrilla.</p>
@@ -64,7 +74,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="images/pollos.jpg" alt="Pollo entero" />
+          <div class="card__media">
+            <img src="images/pollos.jpg" alt="pollo" class="img-default" />
+            <img src="images/pollos2.jpg" alt="pollos2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Pollo entero</h3>
             <p class="card__desc">Ideal para asar.</p>
@@ -85,7 +98,10 @@
       </div>
       <div class="grid">
         <article class="card">
-          <img class="card__media" src="images/lomos.jpg" alt="Lomo de cerdo" />
+          <div class="card__media">
+            <img src="images/lomos.jpg" alt="lomos" class="img-default" />
+            <img src="images/lomos2.jpg" alt="lomos2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Lomo de cerdo</h3>
             <p class="card__desc">Corte tierno para horno.</p>
@@ -96,7 +112,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="images/chuletas.jpg" alt="Chuleta" />
+          <div class="card__media">
+            <img src="images/chuletas.jpg" alt="chuletas" class="img-default" />
+            <img src="images/chuletas2.jpg" alt="chuletas2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Chuleta</h3>
             <p class="card__desc">Clásica para almuerzo.</p>
@@ -107,7 +126,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="tocinos.jpg" alt="Tocino" />
+          <div class="card__media">
+            <img src="images/tocinos.jpg" alt="tocinos" class="img-default" />
+            <img src="images/tocinos2.jpg" alt="tocinos2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Tocino</h3>
             <p class="card__desc">Crujiente y aromático.</p>
@@ -118,7 +140,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="images/costillas.jpg" alt="Costillas BBQ" />
+          <div class="card__media">
+            <img src="images/costillas.jpg" alt="tocinos" class="img-default" />
+            <img src="images/costillas2.jpg" alt="tocinos2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Costillas BBQ</h3>
             <p class="card__desc">Para parrilla y horno.</p>
@@ -131,168 +156,11 @@
       </div>
     </section>
 
-    <!-- Res -->
-    <section class="container section">
-      <div class="section__header">
-        <h2>Carnes: Res</h2>
-        <p>Cortes tradicionales y premium para todo tipo de platos</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <img class="card__media" src="images/puntas.jpg" alt="Punta de anca" />
-          <div class="card__body">
-            <h3 class="card__title">Punta de anca</h3>
-            <p class="card__desc">Sabor intenso, jugoso.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$21.900 por libra</span>
-            <button class="add-button" data-id="ca-re-1">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/lomosres.jpg" alt="Lomo fino" />
-          <div class="card__body">
-            <h3 class="card__title">Lomo fino</h3>
-            <p class="card__desc">Corte premium.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$32.900 por libra</span>
-            <button class="add-button" data-id="ca-re-2">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/molidas.jpg" alt="Molida de res" />
-          <div class="card__body">
-            <h3 class="card__title">Molida de res</h3>
-            <p class="card__desc">Versátil para salsas.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$18.900 por libra</span>
-            <button class="add-button" data-id="ca-re-3">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/sobrebarrigas.jpg" alt="Sobrebarriga" />
-          <div class="card__body">
-            <h3 class="card__title">Sobrebarriga</h3>
-            <p class="card__desc">Para cocción lenta.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$19.900 por libra</span>
-            <button class="add-button" data-id="ca-re-4">Añadir</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Pescados -->
-    <section class="container section">
-      <div class="section__header">
-        <h2>Carnes: Pescados</h2>
-        <p>Pescados frescos y nutritivos para una dieta balanceada</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <img class="card__media" src="images/salmones.jpg" alt="Salmón" />
-          <div class="card__body">
-            <h3 class="card__title">Salmón</h3>
-            <p class="card__desc">Graso y nutritivo.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$36.900 por libra</span>
-            <button class="add-button" data-id="ca-pe-1">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/truchas.jpg" alt="Trucha" />
-          <div class="card__body">
-            <h3 class="card__title">Trucha</h3>
-            <p class="card__desc">Fresco de cultivo.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$28.900 por libra</span>
-            <button class="add-button" data-id="ca-pe-2">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/tilapias.jpg" alt="Tilapia" />
-          <div class="card__body">
-            <h3 class="card__title">Tilapia</h3>
-            <p class="card__desc">Suave y versátil.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$21.900 por libra</span>
-            <button class="add-button" data-id="ca-pe-3">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/robalos.jpg" alt="Róbalo" />
-          <div class="card__body">
-            <h3 class="card__title">Róbalo</h3>
-            <p class="card__desc">Textura firme.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$39.900 por libra</span>
-            <button class="add-button" data-id="ca-pe-4">Añadir</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Mariscos -->
-    <section class="container section">
-      <div class="section__header">
-        <h2>Carnes: Mariscos</h2>
-        <p>Delicias del mar para platos especiales</p>
 
 
-              <div class="grid">
-        <article class="card">
-          <img class="card__media" src="images/langostinos.jpg" alt="Langostinos" />
-          <div class="card__body">
-            <h3 class="card__title">Langostinos</h3>
-            <p class="card__desc">Delicados y sabrosos, ideales para salteados.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$42.900 por libra</span>
-            <button class="add-button" data-id="ca-ma-1">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/camarones.jpg" alt="Camarones" />
-          <div class="card__body">
-            <h3 class="card__title">Camarones</h3>
-            <p class="card__desc">Versátiles para arroz, pasta y ceviches.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$39.500 por libra</span>
-            <button class="add-button" data-id="ca-ma-2">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/pulpos.jpg" alt="Pulpo" />
-          <div class="card__body">
-            <h3 class="card__title">Pulpo</h3>
-            <p class="card__desc">Textura firme, sabor intenso.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$49.900 por libra</span>
-            <button class="add-button" data-id="ca-ma-3">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="images/mejillones.jpg" alt="Mejillones" />
-          <div class="card__body">
-            <h3 class="card__title">Mejillones</h3>
-            <p class="card__desc">Perfectos para sopas y arroces.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$34.900 por libra</span>
-            <button class="add-button" data-id="ca-ma-4">Añadir</button>
-          </div>
-        </article>
-      </div>
-    </section>
+
+  
+    
 
     <!-- Carrito -->
     <aside id="cartPanel" class="cart-panel" aria-hidden="true">
@@ -323,17 +191,57 @@
 
     <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
 
-    <!-- Footer -->
+
+
+
+
+
+     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer__inner">
-        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
-        <p>Entrega en Bogotá y alrededores.</p>
+  <div class="container footer__inner">
+    
+    <!-- Sección izquierda -->
+    <div class="footer__left">
+      <p><strong>Dirección:</strong> Cra. 80G # 02 - 96, Bogotá, Bogotá</p>
+      <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+      <p><strong>Correo:</strong> contacto@merkacol.com</p>
+      <p><a href="https://maps.app.goo.gl/bZSgWhPmCgFK3LBk8" target="_blank">Cómo llegar</a></p>
+    </div>
+
+    <!-- Sección centro -->
+    <div class="footer__center">
+      <p><strong>Nuestras redes sociales</strong></p>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@supermercadomerkacol2477" target="_blank" aria-label="YouTube">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" class="youtube-icon" />
+        </a>
+        <a href="https://www.instagram.com/supermercadosmerkacol/?hl=es" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="instagram-icon" />
+        </a>
+        <a href="https://www.tiktok.com/@merkacol_supermercado?lang=es" target="_blank" aria-label="TikTok">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" class="tiktok-icon" />
+        </a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Sección derecha -->
+    <div class="footer__right">
+      <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+      <p>Sitio web diseñado por</p><u><strong>Giovanni Marín</strong></u>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
   </main>
 
   <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
-

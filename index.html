@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Merkacol - Supermercado en línea</title>
+  <link rel="icon" href="images/iconomerkacol.png" type="image/png">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo"><img src="images/logomerkacol.JPG" alt="Logo de Merkacol" height="50"></a>
+      <a href="index.html" class="logo"><img src="images/logomerkacol.JPG" alt="Logo de Merkacol" height="50"></a>
       <nav class="nav">
-        <a href="index.html">Inicio</a>
+        <a href="index.html" class="active">Inicio</a>
         <!-- <a href="#promociones">Promociones</a> -->
         <a href="frutas.html">Frutas</a>
         <a href="verduras.html">Verduras</a>
@@ -24,17 +25,50 @@
   </header>
 
   <main>
-    <!-- Hero -->
+
+
+
+
     <section class="hero">
-      <div class="container hero__inner">
-        <h1>Bienvenido a Merkacol</h1>
-        <p>Tu supermercado en línea con productos frescos, precios claros y entregas rápidas.</p>
-        <div class="hero__actions">
-          <a href="#promociones" class="btn btn--primary">Ver promociones</a>
-          <!-- <a href="frutas.html" class="btn btn--ghost">Explorar frutas</a> -->
-        </div>
-      </div>
-    </section>
+
+
+
+  <div class="slider">
+    <div class="slide active">
+      <img src="images/slideimg1.JPG" alt="Foto 1">
+    </div>
+    <div class="slide">
+      <img src="images/slideimg2.JPG" alt="Foto 2">
+    </div>
+       <div class="slide">
+      <video controls muted autoplay muted loop playsinline>
+        <source src="images/slidevideo1.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+    <div class="slide">
+      <img src="images/slideimg3.JPG" alt="Foto 3">
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+
+  <!-- Indicadores -->
+  <div class="dots"></div>
+
+  
+</section>
+
+
+ 
+
+
+
+
+
+
 
     <!-- Barra de búsqueda -->
   <section class="search-section container">
@@ -47,6 +81,8 @@
 
     <!-- Información general -->
     <section class="container section">
+      <h1>Bienvenido a Merkacol</h1>
+      <p>Tu supermercado en línea con productos frescos, precios claros y entregas rápidas.</p>
       <h2>Sobre nosotros</h2>
       <p>En Merkacol nos dedicamos a ofrecer productos frescos, seleccionados y de alta calidad. Nuestro compromiso es brindarte una experiencia de compra cómoda, segura y rápida desde la comodidad de tu hogar.</p>
       <p>Contamos con una amplia variedad de frutas, verduras, carnes, productos de despensa y charcutería. ¡Gracias por elegirnos!</p>
@@ -60,7 +96,10 @@
       </div>
       <div class="grid">
         <article class="card">
-          <img class="card__media" src="images/pinagolden.jpg" alt="Piña Oro" />
+          <div class="card__media">
+            <img src="images/pinagolden.jpg" alt="Producto 1" class="img-default" />
+            <img src="images/pinagolden2.jpg" alt="Producto 1 alternativo" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Piña Oro</h3>
             <p class="card__desc">¡Llévate 2 por el precio de 1 esta semana!</p>
@@ -72,7 +111,10 @@
         </article>
 
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Promo" alt="Queso Mozzarella" />
+          <div class="card__media">
+            <img src="images/quesomozzarella.jpg" alt="quesomozzarella" class="img-default" />
+            <img src="images/quesomozzarella2.jpg" alt="quesomozzarella2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Queso Mozzarella 250g</h3>
             <p class="card__desc">20% de descuento por compras superiores a 2 unidades</p>
@@ -84,7 +126,10 @@
         </article>
 
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Arroz+Promo" alt="Arroz blanco 1kg" />
+           <div class="card__media">
+            <img src="images/arroz.jpg" alt="arroz" class="img-default" />
+            <img src="images/arroz2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Arroz blanco 1kg</h3>
             <p class="card__desc">Precio especial por lanzamiento</p>
@@ -107,7 +152,10 @@
       </div>
       <div class="grid">
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Manzana+Roja" alt="Manzana Roja" />
+          <div class="card__media">
+            <img src="images/manzanaroja.jpg" alt="manzanaroja" class="img-default" />
+            <img src="images/manzanaroja2.jpg" alt="manzanaroja2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Manzana Roja</h3>
             <p class="card__desc">Crujiente y equilibrada, perfecta para snacks.</p>
@@ -119,7 +167,10 @@
         </article>
 
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Lechuga+Romana" alt="Lechuga Romana" />
+          <div class="card__media">
+            <img src="images/lechugas.jpg" alt="lechugas" class="img-default" />
+            <img src="images/lechugas2.jpg" alt="lechugas2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Lechuga Romana</h3>
             <p class="card__desc">Base ideal para ensaladas.</p>
@@ -131,7 +182,10 @@
         </article>
 
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Pechuga+Pollo" alt="Pechuga de Pollo" />
+          <div class="card__media">
+            <img src="images/pechugas.jpg" alt="pechugas" class="img-default" />
+            <img src="images/pechugas2.jpg" alt="pechugas2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Pechuga deshuesada</h3>
             <p class="card__desc">Magra, ideal para plancha.</p>
@@ -143,7 +197,10 @@
         </article>
 
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Queso+Mozzarella" alt="Queso Mozzarella" />
+          <div class="card__media">
+            <img src="images/quesomozzarella.jpg" alt="quesomozzarella" class="img-default" />
+            <img src="images/quesomozzarella2.jpg" alt="quesomozzarella2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Queso Mozzarella 250g</h3>
             <p class="card__desc">Fundente y suave.</p>
@@ -187,11 +244,45 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer__inner">
-        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
-        <p>Entrega en Bogotá y alrededores.</p>
+  <div class="container footer__inner">
+    
+    <!-- Sección izquierda -->
+    <div class="footer__left">
+      <p><strong>Dirección:</strong> Cra. 80G # 02 - 96, Bogotá, Bogotá</p>
+      <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+      <p><strong>Correo:</strong> contacto@merkacol.com</p>
+      <p><a href="https://maps.app.goo.gl/bZSgWhPmCgFK3LBk8" target="_blank">Cómo llegar</a></p>
+    </div>
+
+    <!-- Sección centro -->
+    <div class="footer__center">
+      <p><strong>Nuestras redes sociales</strong></p>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@supermercadomerkacol2477" target="_blank" aria-label="YouTube">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" class="youtube-icon" />
+        </a>
+        <a href="https://www.instagram.com/supermercadosmerkacol/?hl=es" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="instagram-icon" />
+        </a>
+        <a href="https://www.tiktok.com/@merkacol_supermercado?lang=es" target="_blank" aria-label="TikTok">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" class="tiktok-icon" />
+        </a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Sección derecha -->
+    <div class="footer__right">
+      <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+      <p>Sitio web diseñado por</p><u><strong>Giovanni Marín</strong></u>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
   </main>
 
   <!-- Scripts -->

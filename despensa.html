@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Despensa | Merkacol</title>
+  <link rel="icon" href="images/iconomerkacol.png" type="image/png">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo">Merkacol</a>
+      <a href="index.html" class="logo"><img src="images/logomerkacol.JPG" alt="Logo de Merkacol" height="50"></a>
       <nav class="nav">
         <a href="index.html">Inicio</a>
         <a href="frutas.html">Frutas</a>
@@ -31,7 +32,10 @@
       </div>
       <div class="grid">
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Arroz+Blanco" alt="Arroz blanco 1kg" />
+          <div class="card__media">
+            <img src="images/arroz.jpg" alt="arroz" class="img-default" />
+            <img src="images/arroz2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Arroz blanco 1kg</h3>
             <p class="card__desc">Grano largo, suave y rendidor.</p>
@@ -42,7 +46,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Lentejas" alt="Lentejas 500g" />
+          <div class="card__media">
+            <img src="images/lentejas.jpg" alt="pechugas" class="img-default" />
+            <img src="images/lentejas2.jpg" alt="pechugas2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Lentejas 500g</h3>
             <p class="card__desc">Ricas en proteína vegetal.</p>
@@ -53,7 +60,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Fr%C3%ADjol" alt="Fríjol rojo 500g" />
+          <div class="card__media">
+            <img src="images/frijolesrojos.jpg" alt="arroz" class="img-default" />
+            <img src="images/frijolesrojos2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Fríjol rojo 500g</h3>
             <p class="card__desc">Ideal para sopas y guisos.</p>
@@ -64,7 +74,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Ma%C3%ADz+Peto" alt="Maíz peto 500g" />
+          <div class="card__media">
+            <img src="images/maiz.jpg" alt="arroz" class="img-default" />
+            <img src="images/maiz2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Maíz peto 500g</h3>
             <p class="card__desc">Perfecto para cocción lenta.</p>
@@ -77,113 +90,7 @@
       </div>
     </section>
 
-      <!-- Café -->
-    <section class="container section">
-      <div class="section__header">
-        <h2>Despensa: Café</h2>
-        <p>Variedades de café colombiano para todos los gustos</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Molido" alt="Café molido 250g" />
-          <div class="card__body">
-            <h3 class="card__title">Café molido 250g</h3>
-            <p class="card__desc">Tostado medio, aroma intenso.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$6.800 por unidad</span>
-            <button class="add-button" data-id="de-ca-1">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Instant%C3%A1neo" alt="Café instantáneo 100g" />
-          <div class="card__body">
-            <h3 class="card__title">Café instantáneo 100g</h3>
-            <p class="card__desc">Práctico y rápido.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$5.200 por unidad</span>
-            <button class="add-button" data-id="de-ca-2">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Org%C3%A1nico" alt="Café orgánico 250g" />
-          <div class="card__body">
-            <h3 class="card__title">Café orgánico 250g</h3>
-            <p class="card__desc">Cultivo sostenible.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$7.900 por unidad</span>
-            <button class="add-button" data-id="de-ca-3">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Caf%C3%A9+Premium" alt="Café premium 500g" />
-          <div class="card__body">
-            <h3 class="card__title">Café premium 500g</h3>
-            <p class="card__desc">Selección especial de origen.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$12.500 por unidad</span>
-            <button class="add-button" data-id="de-ca-4">Añadir</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Chocolate -->
-    <section class="container section">
-      <div class="section__header">
-        <h2>Despensa: Chocolate</h2>
-        <p>Tabletas y bebidas con sabor auténtico</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chocolate+de+Mesa" alt="Chocolate de mesa 250g" />
-          <div class="card__body">
-            <h3 class="card__title">Chocolate de mesa 250g</h3>
-            <p class="card__desc">Tradicional para bebida caliente.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$4.900 por unidad</span>
-            <button class="add-button" data-id="de-ch-1">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chocolate+Amargo" alt="Chocolate amargo 70%" />
-          <div class="card__body">
-            <h3 class="card__title">Chocolate amargo 70%</h3>
-            <p class="card__desc">Intenso y antioxidante.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$6.200 por unidad</span>
-            <button class="add-button" data-id="de-ch-2">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Chocolate+con+Leche" alt="Chocolate con leche" />
-          <div class="card__body">
-            <h3 class="card__title">Chocolate con leche</h3>
-            <p class="card__desc">Suave y cremoso.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$5.800 por unidad</span>
-            <button class="add-button" data-id="de-ch-3">Añadir</button>
-          </div>
-        </article>
-        <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Cacao+en+Polvo" alt="Cacao en polvo 200g" />
-          <div class="card__body">
-            <h3 class="card__title">Cacao en polvo 200g</h3>
-            <p class="card__desc">Ideal para repostería.</p>
-          </div>
-          <div class="card__footer">
-            <span class="price">$7.400 por unidad</span>
-            <button class="add-button" data-id="de-ch-4">Añadir</button>
-          </div>
-        </article>
-      </div>
-    </section>
+      
 
     <!-- Pastas y enlatados -->
     <section class="container section">
@@ -193,7 +100,10 @@
       </div>
       <div class="grid">
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Spaghetti" alt="Spaghetti 500g" />
+          <div class="card__media">
+            <img src="images/espagueti.jpg" alt="arroz" class="img-default" />
+            <img src="images/espagueti2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Spaghetti 500g</h3>
             <p class="card__desc">Pasta italiana de trigo duro.</p>
@@ -204,7 +114,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Macarrones" alt="Macarrones 500g" />
+          <div class="card__media">
+            <img src="images/macarrones.jpg" alt="arroz" class="img-default" />
+            <img src="images/macarrones2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Macarrones 500g</h3>
             <p class="card__desc">Ideales para gratinar.</p>
@@ -215,7 +128,10 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=At%C3%BAn" alt="Atún en agua 160g" />
+          <div class="card__media">
+            <img src="images/atunagua.jpg" alt="arroz" class="img-default" />
+            <img src="images/atunagua2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Atún en agua 160g</h3>
             <p class="card__desc">Fuente de proteína rápida.</p>
@@ -226,18 +142,13 @@
           </div>
         </article>
         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Ma%C3%ADz+Enlatado" alt="Maíz enlatado 300g" />
+          <div class="card__media">
+            <img src="images/maizenlata.jpg" alt="arroz" class="img-default" />
+            <img src="images/maizenlata2.jpg" alt="arroz2" class="img-hover" />
+          </div>
           <div class="card__body">
             <h3 class="card__title">Maíz enlatado 300g</h3>
             <p class="card__desc">Dulce y listo para servir.</p>
-          </div>
-          <div class
-          
-         <article class="card">
-          <img class="card__media" src="https://via.placeholder.com/600x450?text=Tomate+Enlatado" alt="Tomate enlatado 400g" />
-          <div class="card__body">
-            <h3 class="card__title">Tomate enlatado 400g</h3>
-            <p class="card__desc">Listo para salsas y guisos.</p>
           </div>
           <div class="card__footer">
             <span class="price">$5.200 por unidad</span>
@@ -276,13 +187,52 @@
 
     <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
 
-    <!-- Footer -->
+
+
+
+     <!-- Footer -->
     <footer class="footer">
       <div class="container footer__inner">
-        <p>© 2025 Merkacol. Todos los derechos reservados.</p>
-        <p>Entrega en Bogotá y alrededores.</p>
+    
+    <!-- Sección izquierda -->
+    <div class="footer__left">
+      <p><strong>Dirección:</strong> Cra. 80G # 02 - 96, Bogotá, Bogotá</p>
+      <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+      <p><strong>Correo:</strong> contacto@merkacol.com</p>
+      <p><a href="https://maps.app.goo.gl/bZSgWhPmCgFK3LBk8" target="_blank">Cómo llegar</a></p>
+    </div>
+
+    <!-- Sección centro -->
+    <div class="footer__center">
+      <p><strong>Nuestras redes sociales</strong></p>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@supermercadomerkacol2477" target="_blank" aria-label="YouTube">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" class="youtube-icon" />
+        </a>
+        <a href="https://www.instagram.com/supermercadosmerkacol/?hl=es" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="instagram-icon" />
+        </a>
+        <a href="https://www.tiktok.com/@merkacol_supermercado?lang=es" target="_blank" aria-label="TikTok">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" class="tiktok-icon" />
+        </a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Sección derecha -->
+    <div class="footer__right">
+      <p>© 2025 Merkacol. Todos los derechos reservados.</p>
+      <p>Sitio web diseñado por</p><u><strong>Giovanni Marín</strong></u>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
   </main>
 
   <!-- Scripts -->
